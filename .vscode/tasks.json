@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Code",
+			"type": "shell",
+			"command": ".vscode\\runcode.ps1",
+			"args": [
+				"${fileExtname}",
+				"${file}",
+				"${fileDirname}",
+				"${fileBasename}"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher":[]
+		}
+	]
+}
